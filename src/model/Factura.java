@@ -3,12 +3,22 @@ package model;
 import java.util.List;
 
 public class Factura {
+
+    private static Long contador = 0L;
+
+    private Long nroFactura;
     
     private OrdenCompra ordenCompra;
 
     private List<ItemProducto> items;
 
     public Factura() {
+        contador++;
+        nroFactura = contador;
+    }
+
+    public Long getNroFactura() {
+        return nroFactura;
     }
 
     public OrdenCompra getOrdenCompra() {

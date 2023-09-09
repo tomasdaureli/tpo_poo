@@ -1,6 +1,10 @@
 package model;
 
 public class Producto {
+
+    private static Long contador = 0L;
+
+    private Long id;
     
     private Proveedor proveedor;
 
@@ -11,6 +15,12 @@ public class Producto {
     private TipoIVA tipoIva;
 
     public Producto() {
+        contador++;
+        id = contador;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public Proveedor getProveedor() {

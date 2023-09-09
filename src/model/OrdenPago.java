@@ -1,6 +1,10 @@
 package model;
 
 public class OrdenPago {
+
+    private static Long contador = 0L;
+
+    private Long nroOrden;
     
     private double totalPagar;
 
@@ -9,6 +13,12 @@ public class OrdenPago {
     private double totalRetenciones;
 
     public OrdenPago() {
+        contador++;
+        nroOrden = contador;
+    }
+
+    public Long getNroOrden() {
+        return nroOrden;
     }
 
     public double getTotalPagar() {
