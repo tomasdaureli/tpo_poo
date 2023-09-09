@@ -1,14 +1,42 @@
 package model;
 
+import java.util.List;
+
 public class CuentaCorriente {
     
+    private Proveedor proveedor;
+
+    private List<OrdenCompra> compras;
+
+    private List<OrdenPago> pagos;
+
     private double saldo;
 
-    private double debe;
-
-    private double haber;
-
     public CuentaCorriente() {
+    }
+
+    public Proveedor getProveedor() {
+        return proveedor;
+    }
+
+    public void setProveedor(Proveedor proveedor) {
+        this.proveedor = proveedor;
+    }
+
+    public List<OrdenCompra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<OrdenCompra> compras) {
+        this.compras = compras;
+    }
+
+    public List<OrdenPago> getPagos() {
+        return pagos;
+    }
+
+    public void setPagos(List<OrdenPago> pagos) {
+        this.pagos = pagos;
     }
 
     public double getSaldo() {
@@ -17,22 +45,6 @@ public class CuentaCorriente {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
-    }
-
-    public double getDebe() {
-        return debe;
-    }
-
-    public void setDebe(double debe) {
-        this.debe = debe;
-    }
-
-    public double getHaber() {
-        return haber;
-    }
-
-    public void setHaber(double haber) {
-        this.haber = haber;
     }
     
 }

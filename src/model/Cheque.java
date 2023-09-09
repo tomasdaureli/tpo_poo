@@ -3,6 +3,10 @@ package model;
 import java.time.LocalDate;
 
 public class Cheque {
+
+    private static Long contador = 0L;
+
+    private Long nroCheque;
     
     private LocalDate emision;
 
@@ -13,6 +17,12 @@ public class Cheque {
     private double importe;
 
     public Cheque() {
+        contador++;
+        nroCheque = contador;
+    }
+
+    public Long getNroCheque() {
+        return nroCheque;
     }
 
     public LocalDate getEmision() {

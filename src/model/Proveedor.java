@@ -3,6 +3,10 @@ package model;
 import java.time.LocalDate;
 
 public class Proveedor {
+
+    private static Long contador = 0L;
+
+    private Long id;
     
     private String cuit;
 
@@ -23,6 +27,12 @@ public class Proveedor {
     private LocalDate inicioActividades;
     
     public Proveedor() {
+        contador++;
+        id = contador;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getCuit() {
