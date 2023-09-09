@@ -1,14 +1,12 @@
 package model;
 
-import java.math.BigDecimal;
-
 public class ItemProducto {
     
     private Producto producto;
 
     private float cantidad;
 
-    private BigDecimal precio;
+    private double precio;
 
     public ItemProducto() {
     }
@@ -29,11 +27,11 @@ public class ItemProducto {
         this.cantidad = cantidad;
     }
 
-    public BigDecimal getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(BigDecimal precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
     

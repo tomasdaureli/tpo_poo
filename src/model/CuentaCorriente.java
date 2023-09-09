@@ -1,39 +1,37 @@
 package model;
 
-import java.math.BigDecimal;
-
 public class CuentaCorriente {
     
-    private BigDecimal saldo;
+    private double saldo;
 
-    private BigDecimal debe;
+    private double debe;
 
-    private BigDecimal haber;
+    private double haber;
 
     public CuentaCorriente() {
     }
 
-    public BigDecimal getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(BigDecimal saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
-    public BigDecimal getDebe() {
+    public double getDebe() {
         return debe;
     }
 
-    public void setDebe(BigDecimal debe) {
+    public void setDebe(double debe) {
         this.debe = debe;
     }
 
-    public BigDecimal getHaber() {
+    public double getHaber() {
         return haber;
     }
 
-    public void setHaber(BigDecimal haber) {
+    public void setHaber(double haber) {
         this.haber = haber;
     }
     

@@ -1,14 +1,12 @@
 package model;
 
-import java.math.BigDecimal;
-
 public class Producto {
     
     private Proveedor proveedor;
 
     private TipoUnidad tipoUnidad;
 
-    private BigDecimal precioUnitario;
+    private double precioUnitario;
 
     private TipoIVA tipoIva;
 
@@ -31,11 +29,11 @@ public class Producto {
         this.tipoUnidad = tipoUnidad;
     }
 
-    public BigDecimal getPrecioUnitario() {
+    public double getPrecioUnitario() {
         return precioUnitario;
     }
 
-    public void setPrecioUnitario(BigDecimal precioUnitario) {
+    public void setPrecioUnitario(double precioUnitario) {
         this.precioUnitario = precioUnitario;
     }
 

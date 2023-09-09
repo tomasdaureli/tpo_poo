@@ -1,6 +1,5 @@
 package model;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Proveedor {
@@ -19,7 +18,7 @@ public class Proveedor {
 
     private String correoElectronico;
 
-    private BigDecimal ingresosBrutos;
+    private double ingresosBrutos;
 
     private LocalDate inicioActividades;
     
@@ -82,11 +81,11 @@ public class Proveedor {
         this.correoElectronico = correoElectronico;
     }
 
-    public BigDecimal getIngresosBrutos() {
+    public double getIngresosBrutos() {
         return ingresosBrutos;
     }
 
-    public void setIngresosBrutos(BigDecimal ingresosBrutos) {
+    public void setIngresosBrutos(double ingresosBrutos) {
         this.ingresosBrutos = ingresosBrutos;
     }
 

@@ -1,6 +1,5 @@
 package model;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Cheque {
@@ -11,7 +10,7 @@ public class Cheque {
 
     private String firmante;
 
-    private BigDecimal importe;
+    private double importe;
 
     public Cheque() {
     }
@@ -40,11 +39,11 @@ public class Cheque {
         this.firmante = firmante;
     }
 
-    public BigDecimal getImporte() {
+    public double getImporte() {
         return importe;
     }
 
-    public void setImporte(BigDecimal importe) {
+    public void setImporte(double importe) {
         this.importe = importe;
     }
     
