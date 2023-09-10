@@ -8,6 +8,8 @@ public class Producto {
     
     private Proveedor proveedor;
 
+    private String nombre;
+
     private TipoUnidad tipoUnidad;
 
     private double precioUnitario;
@@ -29,6 +31,14 @@ public class Producto {
 
     public void setProveedor(Proveedor proveedor) {
         this.proveedor = proveedor;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public TipoUnidad getTipoUnidad() {
