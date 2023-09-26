@@ -4,20 +4,16 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.CondicionIVA;
-import model.ItemProducto;
-import model.OrdenCompra;
-import model.Producto;
-import model.Proveedor;
-import model.TipoIVA;
-import model.TipoUnidad;
+import model.*;
 
 public class Controller {
 
     private List<Proveedor> proveedores;
     private List<Producto> productos;
     private List<OrdenCompra> ordenesCompra;
-
+    private List<OrdenPago> ordenesPago;
+    private List<Factura> facturas;
+    private List<Cheque> cheques;
     
     public Proveedor createProveedor(String cuit, CondicionIVA iva, String razonSocial, String nombreFantasia, 
             String direccion, String telefono, String correoElectronico, double iibb, LocalDate inicioActividades) {
